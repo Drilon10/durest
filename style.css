@@ -2,10 +2,6 @@
     background-color: #191818 !important;
 }
 
-.text-main {
-
-}
-
 .text-orange {
     color: #f8a000;
 }
@@ -31,4 +27,14 @@
 
 .icon {
     width: 65px;
+}
+
+.nav-link.active {
+    background-color: #f8a000 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.menu-bg {
+    background-color: #31302d;
 }
