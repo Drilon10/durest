@@ -14,8 +14,8 @@
     background-color: #f8a000;
 }
 
-body {
-    height: 2000px;
+.border-orange {
+    border-color: #f8a000 !important;
 }
 
 .carousel-caption {
