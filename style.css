@@ -39,6 +39,7 @@
     background-color: #31302d;
 }
 
-.input-bg {
+.input-bg, .input-bg:focus {
     background-color: #383838;
 }
+
