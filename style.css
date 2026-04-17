@@ -29,7 +29,7 @@
     width: 65px;
 }
 
-.nav-link.active {
+.nav-tabs .nav-link.active {
     background-color: #f8a000 !important;
     color: white !important;
     border: none !important;
@@ -37,4 +37,8 @@
 
 .menu-bg {
     background-color: #31302d;
+}
+
+.input-bg {
+    background-color: #383838;
 }
