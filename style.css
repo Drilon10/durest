@@ -43,3 +43,13 @@
     background-color: #383838;
 }
 
+#scrollToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.auth-card {
+    background-color: #31302d;
+    border: 1px solid #444;
+}
