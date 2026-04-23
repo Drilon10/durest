@@ -41,16 +41,45 @@
 
 .input-bg, .input-bg:focus {
     background-color: #383838;
+    color: #fff;
+    border-color: #555;
+}
+
+.input-bg::placeholder {
+    color: #aaa;
 }
 
 #scrollToTop {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    display: none;
+    z-index: 1050;
 }
 
 .auth-card {
     background-color: #31302d;
     border: 1px solid #444;
     border-radius: 12px;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 10% !important;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid .row.p-4 .col-12 {
+        margin-bottom: 0.5rem;
+    }
 }
