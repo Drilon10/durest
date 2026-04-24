@@ -54,3 +54,23 @@
     border: 1px solid #444;
     border-radius: 12px;
 }
+
+#snackbar {
+    margin: 0 auto;
+    max-width: 250px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    z-index: 1;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+#snackbar.show {
+    visibility: visible;
+}
