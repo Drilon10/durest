@@ -38,3 +38,27 @@ if(signupForm) {
         setTimeout(() => {window.location.href = "login.html"}, 1500)
     })
 }
+
+
+let loginForm = document.getElementById('loginForm');
+
+if(loginForm) {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+        if(!storedUser || storedUser.email != email || storedUser.password != password ) {
+            showSnackbar("Invalid email or password", false);
+            return;
+        }
+
+        localStorage.setItem('isLoggedIn', true);
+        showSnackbar("Login successful", true);
+
+        setTimeout(() => {window.location.href = "home.html"}, 2000);
+    });
+}
